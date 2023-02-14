@@ -11,6 +11,8 @@
 		39AFAC4F299BAB5400892DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AFAC4E299BAB5400892DDC /* ContentView.swift */; };
 		39AFAC51299BAB5500892DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39AFAC50299BAB5500892DDC /* Assets.xcassets */; };
 		39AFAC55299BAB5500892DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39AFAC54299BAB5500892DDC /* Preview Assets.xcassets */; };
+		39AFAC7A299BAE2300892DDC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AFAC79299BAE2300892DDC /* HeaderView.swift */; };
+		39AFAC80299BAE4F00892DDC /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AFAC7F299BAE4F00892DDC /* EditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		39AFAC54299BAB5500892DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39AFAC5A299BAB5500892DDC /* AlwaysNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AFAC64299BAB5500892DDC /* AlwaysNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39AFAC79299BAE2300892DDC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		39AFAC7F299BAE4F00892DDC /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		39AFAC4B299BAB5400892DDC /* AlwaysNote */ = {
 			isa = PBXGroup;
 			children = (
+				39AFAC78299BAE1000892DDC /* Components */,
 				39AFAC77299BAB9200892DDC /* Resources */,
 				39AFAC4E299BAB5400892DDC /* ContentView.swift */,
 				39AFAC50299BAB5500892DDC /* Assets.xcassets */,
@@ -110,6 +115,15 @@
 				39AFAC4C299BAB5400892DDC /* AlwaysNoteApp.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		39AFAC78299BAE1000892DDC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				39AFAC79299BAE2300892DDC /* HeaderView.swift */,
+				39AFAC7F299BAE4F00892DDC /* EditorView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +257,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AFAC4F299BAB5400892DDC /* ContentView.swift in Sources */,
+				39AFAC7A299BAE2300892DDC /* HeaderView.swift in Sources */,
+				39AFAC80299BAE4F00892DDC /* EditorView.swift in Sources */,
 				39AFAC4D299BAB5400892DDC /* AlwaysNoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

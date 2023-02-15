@@ -13,7 +13,7 @@ struct EditorView: View {
     @Binding var fontSize: Double
     var body: some View {
         VStack {
-            TextEditor(text: $noteContents).scrollContentBackground(.hidden).background(.yellow).padding().font(.custom(fontName, size: fontSize))
+            TextEditor(text: $noteContents).scrollContentBackground(.hidden).background(Color("FlexLabelBackgroundColor")).padding().font(.custom(fontName, size: fontSize))
         }
     }
 }

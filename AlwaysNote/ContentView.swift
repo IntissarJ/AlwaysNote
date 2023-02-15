@@ -16,7 +16,7 @@ struct ContentView: View {
 
         }
         .padding()
-        .background(.brown)
+        .background(Color("FlexBackgroundColor"))
         
     }
 }

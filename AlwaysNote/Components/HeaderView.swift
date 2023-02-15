@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @State private var showAlert = false
     @Binding var fontSize: Double
+    @Environment(\.verticalSizeClass) var sizeClass
     var body: some View {
-        VStack{
-            titleView
-            buttonView
+        if sizeClass == .compact {
+            HStack { titleView; buttonView }
+        } else {
+            VStack { titleView; buttonView}
         }
     }
     
     var titleView: some View {
-        Text("AlwaysNote").font(.custom("Hoefler Text", size: 60)).foregroundColor(.cyan)
+        Text("AlwaysNote").font(.custom("Hoefler Text", size: 60)).foregroundColor(Color("FlexLabelColor"))
     }
     var buttonView: some View {
         HStack {
+            Spacer()
+            Button("Save") {
+            }.alert(isPresented: $showAlert, content: { Alert(title: Text("Your note has been stored"))})
+            Spacer()
             Spacer()
             Button("a") {
                 decreaseFont()
@@ -32,6 +39,7 @@ struct HeaderView: View {
             Spacer()
         }
     }
+    
     func decreaseFont() {
         fontSize = max(fontSize - 1.0,8.0)
     }
